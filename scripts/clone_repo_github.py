@@ -124,7 +124,7 @@ def main():
     target_dir = os.path.normpath(os.path.join(here, ".."))
 
     # Đảm bảo repo chính (nếu có .git) cũng vào dev
-    switch_root_to_dev(target_dir)
+    switch_to_dev(target_dir)
 
     # 3. Thực hiện clone (nếu cần) và chuyển sang 'dev'
     clone_and_prepare(target_dir, REPOS)
